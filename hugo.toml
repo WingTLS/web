@@ -1,0 +1,4 @@
+baseURL = 'https://wingtls.org/'
+languageCode = 'en-us'
+title = 'WingTLS'
+theme = 'PaperMod'
