@@ -1,0 +1,11 @@
+{{ if hugo.IsMultilingual }}
+<div class="language-switcher">
+    {{ range .Site.Languages }}
+    {{ if eq . $.Site.Language }}
+    <span class="active">{{ .LanguageName }}</span>
+    {{ else }}
+    <a href="{{ relLangURL $.RelPermalink }}" class="lang-link">{{ .LanguageName }}</a>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }} 

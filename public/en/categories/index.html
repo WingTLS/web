@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=56476&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <meta name="description" content="A Modern TLS Library">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    
+    <link rel="stylesheet" href="/css/extended/custom.css">
+    
+</head>
+<body>
+    
+<nav class="main-nav">
+    <div class="nav-container">
+        <a href="/en/" class="site-title">WingTLS</a>
+        <button class="mobile-menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="/en/docs" class="">
+                Docs
+            </a>
+            <a href="/en/blog" class="">
+                Blog
+            </a>
+            <a href="/en/download" class="">
+                Download
+            </a>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="language-menu">
+            <div class="language-button">
+                English
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="language-dropdown">
+                
+                    <a href="http://localhost:56476/zh/categories/">中文</a>
+                
+            </div>
+        </div>
+        <a href="https://github.com/wingtls" target="_blank" rel="noopener noreferrer" class="github-link">
+            <i class="fab fa-github"></i>
+        </a>
+    </div>
+</nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenuButton.addEventListener('click', function() {
+        navLinks.classList.toggle('show');
+    });
+
+    
+    document.addEventListener('click', function(event) {
+        if (!event.target.closest('.nav-container') && navLinks.classList.contains('show')) {
+            navLinks.classList.remove('show');
+        }
+    });
+});
+</script> 
+    <main class="main">
+        
+<div class="page-container">
+    <div class="page-header">
+        <h1>Categories</h1>
+        
+    </div>
+    <div class="page-content">
+        
+        
+    </div>
+</div>
+
+    </main>
+</body>
+</html> 

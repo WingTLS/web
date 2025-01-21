@@ -1,0 +1,88 @@
+{{ define "main" }}
+<div class="hero-section">
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Description }}</p>
+    <div class="hero-buttons">
+        <a href="{{ "docs" | relLangURL }}" class="primary-button">
+            {{ if eq .Site.Language.Lang "zh" }}开始使用{{ else }}Get Started{{ end }}
+        </a>
+        <a href="https://github.com/wingtls" target="_blank" rel="noopener noreferrer" class="secondary-button">
+            <i class="fab fa-github"></i>
+            {{ if eq .Site.Language.Lang "zh" }}查看源码{{ else }}View on GitHub{{ end }}
+        </a>
+    </div>
+</div>
+
+<div class="features-section">
+    <h2>{{ if eq .Site.Language.Lang "zh" }}主要特性{{ else }}Key Features{{ end }}</h2>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-bolt"></i>
+            </div>
+            <h3>{{ if eq .Site.Language.Lang "zh" }}高性能{{ else }}High Performance{{ end }}</h3>
+            <p>{{ if eq .Site.Language.Lang "zh" }}
+                采用现代化优化技术构建，提供卓越的性能表现
+            {{ else }}
+                Built with modern optimization techniques for exceptional performance
+            {{ end }}</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>{{ if eq .Site.Language.Lang "zh" }}易于集成{{ else }}Easy Integration{{ end }}</h3>
+            <p>{{ if eq .Site.Language.Lang "zh" }}
+                简洁的API设计，让集成过程轻松快捷
+            {{ else }}
+                Simple API design for quick and easy implementation
+            {{ end }}</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>{{ if eq .Site.Language.Lang "zh" }}安全可靠{{ else }}Security First{{ end }}</h3>
+            <p>{{ if eq .Site.Language.Lang "zh" }}
+                遵循最新的安全最佳实践，确保数据传输安全
+            {{ else }}
+                Following the latest security best practices for secure data transmission
+            {{ end }}</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <i class="fas fa-globe"></i>
+            </div>
+            <h3>{{ if eq .Site.Language.Lang "zh" }}跨平台支持{{ else }}Cross-Platform{{ end }}</h3>
+            <p>{{ if eq .Site.Language.Lang "zh" }}
+                支持多种平台和架构，满足不同场景需求
+            {{ else }}
+                Supports multiple platforms and architectures for various use cases
+            {{ end }}</p>
+        </div>
+    </div>
+</div>
+
+<div class="getting-started-section">
+    <h2>{{ if eq .Site.Language.Lang "zh" }}快速开始{{ else }}Getting Started{{ end }}</h2>
+    <div class="code-block">
+        <div class="code-header">
+            <span>{{ if eq .Site.Language.Lang "zh" }}安装{{ else }}Installation{{ end }}</span>
+        </div>
+        <pre><code>git clone https://github.com/wingtls/wingtls
+cd wingtls</code></pre>
+    </div>
+    <div class="docs-link">
+        <a href="{{ "docs" | relLangURL }}" class="text-button">
+            {{ if eq .Site.Language.Lang "zh" }}
+                查看完整文档 <i class="fas fa-arrow-right"></i>
+            {{ else }}
+                View Full Documentation <i class="fas fa-arrow-right"></i>
+            {{ end }}
+        </a>
+    </div>
+</div>
+{{ end }} 

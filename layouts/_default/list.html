@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="page-container">
+    <div class="page-header">
+        <h1>{{ .Title }}</h1>
+        {{ with .Description }}
+        <p class="page-description">{{ . }}</p>
+        {{ end }}
+    </div>
+    <div class="page-content">
+        {{ .Content }}
+        {{ if .Pages }}
+        <div class="content-grid">
+            {{ range .Pages }}
+            <div class="content-card">
+                <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+                {{ with .Description }}
+                <p>{{ . }}</p>
+                {{ end }}
+                <a href="{{ .RelPermalink }}" class="text-button">
+                    {{ if eq $.Site.Language.Lang "zh" }}
+                        阅读更多 <i class="fas fa-arrow-right"></i>
+                    {{ else }}
+                        Read More <i class="fas fa-arrow-right"></i>
+                    {{ end }}
+                </a>
+            </div>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }} 

@@ -1,7 +1,44 @@
 baseURL = 'https://wingtls.org/'
-languageCode = 'en-us'
 title = 'WingTLS'
-contentdir = 'content'
-layoutdir = 'layouts'
-publishdir = 'public'
-themes = 'PaperMod'
+theme = 'PaperMod'
+
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    title = "WingTLS"
+    [languages.en.params]
+      description = "A Modern TLS Library"
+
+  [languages.zh]
+    languageName = "中文"
+    weight = 2
+    title = "WingTLS"
+    [languages.zh.params]
+      description = "现代化的TLS库"
+
+[params]
+  defaultTheme = "dark"
+  ShowReadingTime = false
+  ShowShareButtons = false
+  ShowPostNavLinks = false
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = false
+  ShowToc = false
+  
+  [params.homeInfoParams]
+    Title = "WingTLS"
+    Content = """
+A modern, high-performance TLS library
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/wingtls"
+
+  [params.assets]
+    disableHLJS = true
