@@ -23,13 +23,7 @@ cd wingtls
 
 ## Example
 
-```go
+```rust
 // Basic usage example
-package main
 
-import "github.com/wingtls/wingtls"
-
-func main() {
-    // Configuration code example
-}
 ``` 

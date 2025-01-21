@@ -23,13 +23,7 @@ cd wingtls
 
 ## 示例
 
-```go
+```rust
 // 基本使用示例
-package main
 
-import "github.com/wingtls/wingtls"
-
-func main() {
-    // 配置代码示例
-}
 ``` 

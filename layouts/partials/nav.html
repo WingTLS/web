@@ -15,6 +15,9 @@
             <a href="{{ "download" | relLangURL }}" class="{{ if eq $currentPage.Section "download" }}active{{ end }}">
                 {{ if eq .Site.Language.Lang "zh" }}下载{{ else }}Download{{ end }}
             </a>
+            <a href="{{ "contact" | relLangURL }}" class="{{ if eq $currentPage.Section "contact" }}active{{ end }}">
+                {{ if eq .Site.Language.Lang "zh" }}联系我们{{ else }}Contact{{ end }}
+            </a>
         </div>
     </div>
     <div class="nav-container">
