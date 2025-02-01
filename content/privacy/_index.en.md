@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+description: "WingTLS Privacy Policy"
 date: 2023-10-13T12:00:00Z
 draft: false
 url: "/privacy"
