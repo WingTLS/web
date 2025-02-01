@@ -3,6 +3,8 @@ title: "使用条款"
 description: "WingTLS 使用条款"
 date: 2023-10-13T12:00:00Z
 draft: false
+type: "page"
+layout: "single"
 url: "/zh/terms"
 ---
 

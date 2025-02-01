@@ -3,6 +3,8 @@ title: "隐私政策"
 description: "WingTLS 隐私政策"
 date: 2023-10-13T12:00:00Z
 draft: false
+type: "page"
+layout: "single"
 url: "/zh/privacy"
 ---
 
