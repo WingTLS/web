@@ -2,6 +2,7 @@
 title: "使用条款"
 date: 2023-10-13T12:00:00Z
 draft: false
+url: "/zh/terms"
 ---
 
 # 使用条款
