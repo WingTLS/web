@@ -4,8 +4,8 @@
             © {{ now.Format "2006" }} WingTLS. All rights reserved.
         </div>
         <div class="footer-links">
-            <a href="/privacy">{{ if eq .Site.Language.Lang "zh" }}隐私政策{{ else }}Privacy Policy{{ end }}</a>
-            <a href="/terms">{{ if eq .Site.Language.Lang "zh" }}使用条款{{ else }}Terms of Use{{ end }}</a>
+            <a href="{{ if eq .Site.Language.Lang "zh" }}/zh/privacy{{ else }}/privacy{{ end }}">{{ if eq .Site.Language.Lang "zh" }}隐私政策{{ else }}Privacy Policy{{ end }}</a>
+            <a href="{{ if eq .Site.Language.Lang "zh" }}/zh/terms{{ else }}/terms{{ end }}">{{ if eq .Site.Language.Lang "zh" }}使用条款{{ else }}Terms of Use{{ end }}</a>
             <a href="https://github.com/wingtls" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
     </div>
