@@ -24,6 +24,18 @@ cd wingtls
 ## 示例
 
 ```rust
-// 基本使用示例
+use wingtls::TlsConfig;
 
+fn main() -> Result<(), wingtls::Error> {
+    // 创建 TLS 配置
+    let config = TlsConfig::new()
+        .with_certificate("cert.pem")
+        .with_private_key("key.pem")
+        .build()?;
+
+    // 连接到服务器
+    let stream = wingtls::connect("example.com:443", &config)?;
+
+    Ok(())
+}
 ``` 
